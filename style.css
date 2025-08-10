@@ -1,0 +1,1115 @@
+/* PC、スマホ共通スタイル */
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 15px;
+}
+
+  .paragraph {
+  padding: 10px;
+  border: solid 10px rgb(239, 239, 236); 
+}
+
+.container {
+  display: flex;
+  flex-direction: row; /* 横並び */
+  gap: 10px; /* アイテム間の余白 */
+}
+
+.item {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* 縦並び */
+  }
+}
+
+    .containerroom {
+      display: flex;
+      flex-direction: row;
+
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .imageroom {
+      flex: 1;
+    }
+
+    .imageroom img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+    }
+
+    .descriptionroom {
+      flex: 2;
+    }
+
+    /* スマホ対応 */
+    @media screen and (max-width: 768px) {
+      .containerroom {
+        flex-direction: column;
+      }
+
+      .descriptionroom {
+        margin-top: 10px;
+      }
+    }
+
+a:link {
+  color: gray;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: rgb(191, 24, 24);
+}
+
+a:active {
+  color: rgb(191, 24, 24);
+}
+
+
+
+body {
+  max-width: 1080px;
+  margin: 0 auto 0 auto;
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+  
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ナビゲーションのレイアウト */
+#nav-pc {
+  font-size: 14px;
+}
+
+#nav-pc ul {
+  display: flex;
+  padding-left: 0;
+}
+
+#nav-pc li {
+  list-style: none;
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+#nav-pc a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #0d0d0d;
+}
+
+#nav-pc a:hover {
+  text-decoration: underline;
+}
+
+/* スマホ用ナビを非表示 */
+#nav-sp,
+#menu-sp {
+  display: none;
+}
+
+
+/*見出し*/
+h2 {
+  margin: 40px 0 0 0;
+  text-align:  center; 
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 27px;
+}
+
+/* コース */
+#course {
+  margin: 80px auto 80px auto;
+}
+
+#course-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.course-item {
+  flex: 1;
+  min-width: 200px;
+  padding: 0px 0px 0px 25px;
+}
+
+.course-item img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #course-flex {
+    flex-direction: column;
+  }
+}
+
+#course-table {
+  width: 100%;
+}
+
+.course-td {
+  text-align: left;
+  padding: 10px;
+  border-bottom-color: #d51010;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  width: 100px;
+}
+
+.course-td2 {
+  border-top-color: #d51010;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.course-cell {
+  padding: 10px;
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.course-cell-first {
+  border-top-color: #ececec;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+/* プロダクト */
+#about {
+  background-color: #fafafa;
+  margin: 80px 0 80px 0;
+  padding: 10px 40px 0px 40px;
+}
+
+/* 外枠 */
+#about .about-flex {
+  margin-top: 40px;
+  display: flex;
+}
+
+/* 左のカラム */
+#about-left {
+  width: 50%;
+  margin-right: 20px;
+}
+
+/* 右のカラム */
+#about-right {
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 80px;
+}
+
+/* 写真＋説明の枠 */
+#about-left > div {
+  position: relative;
+  height: 480px;
+  margin-right: 20px;
+}
+
+#about-right > div {
+  position: relative;
+  height: 400px;
+  margin-left: 20px;
+}
+
+/* 写真*/
+.about-photo {
+  width: 100%;
+}
+
+/* 説明文の枠 */
+.about-explain {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  margin: 0 40px 0 40px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 説明文の英語 */
+.about-explain > span {
+  color: #2710d5;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0px;
+}
+
+/* 説明文の見出し */
+.about-explain > h3 {
+  margin: 5px 0 5px 0;
+}
+
+/* 説明文 */
+.about-explain > p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* もっと見るボタン */
+#about-more {
+  text-align: center;
+}
+
+#about-more a {
+  position: relative;
+  bottom: -42px;
+}
+
+/* ニュース */
+#news {
+  margin: 80px auto 80px auto;
+}
+
+/* ３つの組織文化と写真を入れる枠 */
+#news > div {
+  display: flex;
+}
+
+/* 写真 */
+.culture-img {
+  width: 50%;
+  align-self: flex-start;
+}
+
+.culture-img2 {
+  margin-top: 50px;
+  width: 100%;
+}
+
+/* 3つの組織文化の表 */
+.culture-table {
+  margin-right: 50px;
+}
+
+/* 番号 */
+.culture-num {
+  font-size: 80px;
+  color: #2710d5;
+  padding: 0 20px 0 0;
+}
+
+/* 見出し */
+.culture-table th {
+  text-align: left;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* 組織文化英語 */
+.culture-en {
+  color: #2710d5;
+  font-size: 24px;
+}
+
+/* 説明文 */
+.culture-description {
+  margin: 0;
+}
+
+/* ビジョン */
+#topic {
+  margin: 80px auto 80px auto;
+}
+
+/* セクション内の外枠*/
+#topic > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*7つの行動指針の枠*/
+.topic-box {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.topic-box > img {
+  width: 100%;
+  position: relative;
+  z-index: 30;
+}
+
+.topic-box > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 31;
+  margin-right: 10px;
+}
+
+.topic-box > div > h4 {
+  color: #2710d5;
+  font-size: 19px;
+  margin: 80px 0 0 0;
+}
+
+.topic-box > div > h4::first-letter {
+  font-size: 40px;
+}
+
+.topic-box > div > h5 {
+  font-size: 18px;
+  margin: 90px 0px 0px 40px;
+}
+
+.topic-box > div > p {
+  margin: 0px 0px 0px 43px;
+}
+
+
+/*アクセス*/
+#access {
+  margin: 80px auto 80px auto;
+}
+
+#access-table {
+  width: 100%;
+}
+
+.tableheader {
+  text-align: left;
+  padding: 20px;
+  border-bottom-color: #2710d5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  width: 100px;
+}
+
+.tableheader-first {
+  border-top-color: #2710d5;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.cell {
+  padding: 30px;
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.cell-first {
+  border-top-color: #ececec;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+#access > iframe {
+  width: 100%;
+  height: 368px;
+  margin-top: 40px;
+}
+
+/* お問い合わせ */
+#contact {
+  margin: 80px auto 80px auto;
+}
+
+/* 外枠 */
+#contact > form > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+/* 左列　見出し */
+.contact-heading {
+  width: 240px;
+  align-self: center;
+}
+
+/* 見出しのラベル */
+.contact-label {
+  font-weight: normal;
+}
+
+/* 必須 */
+.contact-span {
+  color: #ce2222;
+  margin: 0 0 0 20px;
+  font-weight: bold;
+}
+
+/* テキストボックス */
+.contact-textbox {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  border-style: solid;
+  background-color: #fafafa;
+  height: 56px;
+  width: 400px;
+}
+
+/* お問い合わせ内容のテキストエリア */
+.contact-textarea {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  background-color: #fafafa;
+  width: 400px;
+  height: 200px;
+}
+
+
+/* フッター */
+footer {
+  background-color: #373636;
+  text-align: center;
+  padding: 80px 80px 30px 80px;
+}
+
+#footer-logo {
+  margin-bottom: 30px;
+}
+
+#footer-link {
+  margin-bottom: 50px;
+}
+
+#footer-link > a {
+  text-decoration: none;
+  margin: 10px;
+  color: #ffffff;
+}
+
+#footer-link > a:hover {
+  text-decoration: underline;
+}
+
+#sns-footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+#sns-footer a {
+  margin-right: 30px;
+}
+
+#copyright {
+  color: #ffffff;
+  margin: 0;
+}
+
+
+
+/* DUOについてページ */
+#mission-five-goals {
+  padding: 20px;
+  display: flex;
+}
+
+#mission-five-goals .five-goals-image {
+  width: 30%;
+  padding: 20px;
+}
+
+#mission-five-goals .five-goals-image img {
+  width: 100%;
+}
+
+#mission-five-goals .five-goals-read {
+  width: 90%;
+  padding: 20px;
+}
+
+#mission-five-goals .five-goals-read > div {
+  margin-bottom: 40px;
+}
+
+.fivegoals-image-right {
+  float: right;
+  margin: 20px;
+}
+
+.fivegoals-image-left {
+  float: left;
+  margin: 20px;
+}
+
+.fivegoals-number {
+  color: #594cbf;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.fivegoals-h3 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.fivegoals-p {
+  margin: 0;
+}
+
+/* プロダクトページ */
+.about-main-inner {
+  background-image: url("images/product/product-main.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+#about-title {
+  background-color: #2710d5;
+  width: 368px;
+  color: #ffffff;
+  height: 496px;
+  border-radius: 0 248px 248px 0;
+  position: relative;
+}
+
+#about-title h1 {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  font-size: 80px;
+  line-height: 1;
+}
+
+#about-title h1 span {
+  font-size: 26px;
+}
+
+#about-title > p {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  font-size: 16px;
+}
+
+/* セクション */
+.about-section {
+  display: flex;
+  padding: 20px 20px 0;
+}
+
+.about-section .about-section-img {
+  width: 450px;
+}
+
+/* 右が画像のセクション*/
+.about-section-left .about-section-img img {
+  width: 100%;
+  padding: 0 40px 30px 0;
+  border-radius: 0 432px 0 0;
+}
+
+.about-section-left .about-read {
+  width: 50%;
+  flex-grow: 1;
+}
+
+.about-section-left .about-read p {
+  margin-bottom: 0;
+}
+
+/* 右が画像のセクション*/
+.about-section-right {
+  justify-content: space-between;
+}
+
+.about-section-right .about-section-img img {
+  width: 100%;
+  padding: 0 0 30px 40px;
+  border-radius: 432px 0 0 0;
+}
+
+.about-section-right .about-read {
+  width: 500px;
+}
+
+.about-h2 {
+  color: #2710d5;
+  font-size: 24px;
+  margin: 0;
+}
+
+.about-h3 {
+  font-size: 28px;
+  margin: 0;
+}
+
+/*====================
+ スマートフォン用のスタイル
+=====================*/
+@media screen and (max-width: 767px) {
+  /* PC用ナビゲーション非表示 */
+  #nav-pc {
+    display: none;
+  }
+
+  /* ハンバーガーメニュー */
+  #menu-sp {
+    display: block;
+    background-color: transparent;
+    float: right;
+    padding: 0;
+    border: none;
+  }
+
+  /* スマホ用ナビゲーションの表示切替*/
+  /* 初期状態、レイアウトと非表示設定 */
+  #nav-sp {
+    background-color: #515251;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+  }
+
+  /* ×ボタン */
+  #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+  }
+
+  #nav-sp nav ul {
+    padding-left: 0;
+  }
+
+  #nav-sp nav li {
+    list-style: none;
+  }
+
+  /* ナビゲーションメニュー用ロゴ */
+  #logo-sp {
+    margin: 80px 0 30px 20px;
+  }
+
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav-sp nav a {
+    display: block;
+    color: #ffffff;
+  }
+
+  #nav-sp nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav-sp .menu {
+    text-decoration: none;
+    margin: 0 20px 0 20px;
+    height: 44px;
+    font-size: 16px;
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  /* メインビジュアル */
+  #main-visual {
+    position: relative;
+    height: 470px;
+  }
+
+  #main-visual > div {
+    text-align: center;
+    height: 280px;
+  }
+
+  #main-visual h1 {
+    font-size: 28px;
+    margin: 90px 0 0 0;
+  }
+
+  #main-visual > div > p {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  #main-visual > img {
+    width: 100%;
+    border-radius: 476px 0 0 0;
+    top: auto;
+    bottom: 0;
+  }
+
+  /*見出し*/
+  h2 {
+    margin: 15px 0 15px 0;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+  }
+
+/*　ミッション　*/
+#course {
+  margin: 20px 0 20px 0;
+  padding: 0 20px 0 20px;
+}
+
+#course {
+  flex-direction: column;
+}
+
+#course-flex > div {
+  width: 100%;
+  margin: 0;
+}
+
+/* DUOについて */
+  #about {
+    margin: 0;
+    padding: 10px 20px 0 20px;
+  }
+
+  /* 外枠 */
+  #about .about-flex {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  /* 左右のカラム　スマホでは縦並び */
+  #about-left,
+  #about-right {
+    width: 100%;;
+    margin: 0;
+  }
+
+  /* 写真＋説明の枠 */
+  #about-left > div,
+  #about-right > div {
+    height: auto;
+    margin: 0;
+  }
+
+  /* 説明文の枠 */
+  .about-explain {
+    position: relative;
+    margin: 0;
+  }
+
+  .about-explain > h3 {
+    margin: 10px 0 10px 0;
+    font-size: 24px;
+  }
+
+  /* もっと見るボタン */
+  #about-more {
+    text-align: left;
+  }
+
+  /* ニュース */
+  #news {
+    margin: 80px 20px 80px 20px;
+  }
+
+  #news > div {
+    flex-direction: column;
+  }
+
+  .culture-table th {
+    font-size: 16px;
+  }
+
+  .culture-table {
+    margin-right: 0;
+    padding-right: 20px;
+    order: 2;
+  }
+
+  .culture-img {
+    width: 100%;
+    order: 1;
+  }
+
+  .culture-img2 {
+    margin-top: 0;
+  }
+
+  .culture-num {
+    padding: 0;
+  }
+
+  .culture-description {
+    margin: 0;
+  }
+
+  /* トピック */
+  #topic {
+    margin: 80px 20px 80px 20px;
+  }
+
+  .topic-box > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .topic-box > div > h4 {
+    margin: 60px 0 0 0;
+  }
+
+  /*アクセス*/
+  #access {
+    margin: 0 20px 0 20px;
+  }
+
+  #access > h3 {
+    margin-bottom: 20px;
+  }
+
+  .tableheader {
+    width: 50px;
+  }
+
+  .cell {
+    padding: 20px;
+  }
+
+  #access > iframe {
+    height: 240px;
+  }
+
+  /* お問い合わせ */
+  #contact {
+    margin: 80px 20px 80px 20px;
+  }
+
+  #contact > h3 {
+    margin-bottom: 20px;
+  }
+
+  #contact > form > div {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .contact-heading {
+    align-self: auto;
+    margin-bottom: 20px;
+  }
+
+  .contact-textbox {
+    min-width: 300px;
+    width: 100%;
+  }
+
+  .contact-textarea {
+    height: 150px;
+    width: 100%;
+  }
+
+  .radiobutton {
+    margin-bottom: 20px;
+  }
+
+  /* フッター */
+  footer {
+    padding: 30px 20px 50px 20px;
+    text-align: left;
+  }
+
+  #footer-link > a {
+    margin: 0 20px 30px 0;
+    display: block;
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  #footer-link > a:hover {
+    text-decoration: underline;
+  }
+
+  #sns-footer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #copyright {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+  /* course.html用スタイル */
+  /* コースのメインビジュアル */
+  #course-main {
+    height: 256px;
+    margin-top: 4%;
+    position: relative;
+  }
+
+  .course-main-inner {
+    height: 80%;
+    background-size: cover;
+  }
+
+  #course-title {
+    width: 136px;
+    height: 256px;
+    position: absolute;
+    top: -10%;
+  }
+
+  #course-title h1 {
+    left: 20px;
+    font-size: 40px;
+  }
+
+  #course-title h1 span {
+    font-size: 18px;
+  }
+
+  #course-title > p {
+    top: 180px;
+    left: 20px;
+    font-size: 13px;
+  }
+
+  /* ミッションページ　S2DGSの設定 */
+  .course-h2 {
+    font-size: 38px;
+    margin: 0px;
+  }
+
+  .course-h2::after {
+    content: none;
+  }
+
+  #course-s2dgs > img {
+    width: 100%;
+  }
+
+
+
+  /* ミッションページ　5つのゴールの設定 */
+  #course-five-goals {
+    flex-direction: column;
+  }
+
+  #course-five-goals > div {
+    padding: 0;
+  }
+
+  #course-five-goals .five-goals-image,
+  #course-five-goals .five-goals-read {
+    width: 100%;
+    padding: 0;
+  }
+
+  #course-five-goals .five-goals-read > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-image-right,
+  .course-image-left {
+    align-self: center;
+  }
+
+  /* Aboutページ */
+  #about-main {
+    height: 256px;
+    margin-top: 4%;
+    position: relative;
+  }
+
+  .about-main-inner {
+    height: 80%;
+    background-size: cover;
+  }
+
+  #about-title {
+    width: 136px;
+    height: 256px;
+    position: absolute;
+    top: -10%;
+  }
+  
+  #about-title h1 {
+    left: 20px;
+    font-size: 40px;
+  }
+
+  #about-title h1 span {
+    font-size: 18px;
+  }
+
+  #about-title > p {
+    top: 180px;
+    left: 20px;
+    font-size: 13px;
+  }
+
+  /* セクション */
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-section .about-section-img {
+    width: 100%;
+  }
+  
+  .about-section .about-section-img img {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* 右が画像のセクション*/
+  .about-section-left .about-section-img img {
+    border-radius: 0 300px 0 0;
+  }
+
+  .about-section-left .about-read {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  /* 右が画像のセクション*/
+  .about-section-right .about-section-img img {
+    order: 1;
+    border-radius: 300px 0 0 0;
+  }
+
+  .about-section-right .about-read {
+    order: 2;
+    width: 100%;
+  }
+
+}

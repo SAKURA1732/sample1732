@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DUOジュケンパーソナルトレーニング</title>
+    <meta charset="utf-8">
+    <meta name="description" content="相鉄本線 和田町駅から徒歩3分の学習塾です。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <!-- ロゴ -->
+      <a href="index.html" id="logo">
+        <img src="images/logo.png" alt="トップページに戻る">
+      </a>
+
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+       <ul>
+        <li><a href="course.html">コース</a></li>
+        <li><a href="about.html">DUOについて</a></li>
+        <li><a href="index.html#news">ニュース</a></li>
+        <li><a href="index.html#topic">トピック</a></li>
+        <li><a href="index.html#access">アクセス</a></li>
+        <li><a href="index.html#contact">お問い合わせ</a></li>
+       </ul>
+      </nav>
+
+      <!-- スマホ用メニューボタン -->
+      <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+        <img src="images/button-menu.png" alt="ナビゲーションを開く">
+      </button>
+
+      <!-- スマホ用ナビゲーション -->
+      <div id="nav-sp">
+        <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+          <img src="images/button-close.png" alt="ナビゲーションを閉じる">
+        </button>
+
+        <nav>
+          <ul>
+            <li>
+              <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img src="images/logo.png" alt="トップページに戻る"></a>
+            </li>
+            <li><a class="menu" href="course.html" onclick="document.getElementById('nav-sp').style.display = 'none'">コース</a></li><hr>
+            <li><a class="menu" href="product.html" onclick="document.getElementById('nav-sp').style.display = 'none'">DUOについて</a></li><hr>
+            <li><a class="menu" href="index.html#aboutus" onclick="document.getElementById('nav-sp').style.display = 'none'">ニュース</a></li><hr>
+            <li><a class="menu" href="index.html#vision" onclick="document.getElementById('nav-sp').style.display = 'none'">トピック</a></li><hr>
+            <li><a class="menu" href="index.html#company" onclick="document.getElementById('nav-sp').style.display = 'none'">アクセス</a></li><hr>
+            <li><a class="menu" href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">お問い合わせ</a></li><hr>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- メイン -->
+         <picture>
+  <source media="(max-width: 560px)" srcset="images/index/index-smain.png">
+  <source media="(max-width: 960px)" srcset="images/index/index-mmain.png">
+  <img src="images/index/index-main.png" alt="橋を渡る学生たち">
+</picture>
+
+        <!-- コース -->
+<section id="course">
+  <h2 class="index-h2">コース</h2><br>
+
+  <div id="course-flex">
+    <div class="course-item"><a href="course.html#01">
+      <img src="images/index/course_01.png" alt="小学生コース"></a>
+    </div>
+    <div class="course-item"><a href="course.html#02">
+      <img src="images/index/course_02.png" alt="中学生コース"></a>
+    </div>
+    <div class="course-item"><a href="course.html#03">
+      <img src="images/index/course_03.png" alt="高校生・既卒コース"></a>
+    </div>
+    <div class="course-item"><a href="course.html#04">
+      <img src="images/index/course_04.png" alt="英検・TOEICコース"></a>
+    </div>
+  </div>
+</section>
+
+        <!-- DUOについて -->
+        <section id="about">
+          <h2 class="index-h2">DUOについて</h2>
+          <div class="about-flex">
+            <div id="about-left">
+              <div>
+                <img class="about-photo" src="images/index/index-about1.png" alt="受験パーソナルトレーニングとは">
+                <div class="about-explain">
+                  <h3>受験パーソナルトレーニングとは</h3>
+                  <p>目標達成の最適解！合格のチカラを最短で！</p>
+                </div>
+              </div>
+              <div>
+                <img class="about-photo" src="images/index/index-about2.png" alt="「個別指導」との違い">
+                <div class="about-explain">
+                  <h3>「個別指導」との違い</h3>
+                  <p>DUOが提供する「受験パーソナルトレーニング」と「従来の個別指導」の違いについて</p>
+                </div>
+              </div>
+            </div>
+            <div id="about-right">
+              <div>
+                <img class="about-photo" src="images/index/index-about3.png" alt="施設案内">
+                <div class="about-explain">
+                  <h3>施設案内</h3>
+
+                </div>
+              </div>
+              <div>
+                <img class="about-photo" src="images/index/index-about4.png" alt="講師紹介">
+                <div class="about-explain">
+                  <h3>講師紹介</h3>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="about-more">
+            <a href="about.html">
+              <img src="images/button-more.png" alt="もっとみる">
+            </a>
+          </div>
+        </section>
+
+        <!-- ニュース -->
+        <section id="news">
+          <h2 class="index-h2">ニュース</h2>
+          <div>
+            <table class="culture-table">
+              <tr>
+                <td class="culture-description">2025.8.9</td>
+                <td class="culture-description">公式HPをリニューアルしました。</td>
+              </tr>
+</table>
+        </section>
+
+        <!-- トピック -->
+        <section id="topic">
+          <h2 class="index-h2">トピック</h2>
+          <div>
+            <div class="topic-box"><a href="topic_1.html" target="_blank">
+              <img src="images/index/topic-01.png" alt="01"></a>
+              <div>
+                <h5>難単語攻略！ 効率的に英検1級単語を覚えよう</h5>
+              </div>
+            </div>
+            <div class="topic-box"><a href="topic_1.html" target="_blank">
+              <img src="images/index/topic-02.png" alt="02"></a>
+              <div>
+                <h5>公式を覚えるもの？導き出せれば良い？</h5>
+              </div>
+            </div>
+            <div class="topic-box"><a href="topic_1.html" target="_blank">
+              <img src="images/index/topic-02.png" alt="03"></a>
+              <div>
+                <h5>数学は分かっていないと解けても楽しくない！</h5>
+              </div>
+            </div>
+            <div class="topic-box"><a href="topic_1.html" target="_blank">
+              <img src="images/index/topic-02.png" alt="04"></a>
+              <div>
+                <h5>1から始める高校数学</h5>
+                <p>～チャート式主要4色徹底比較～</p>
+
+              </div>
+            </div>
+            <div class="topic-box"><a href="topic_1.html" target="_blank">
+              <img src="images/index/topic-02.png" alt="05"></a>
+              <div>
+                <h5>1から始める高校数学</h5>
+                <p>～テキストの選び方【実践編(文系)】</p>
+              </div>
+            </div>
+            <div class="topic-box"><a href="topic_1.html" target="_blank">
+              <img src="images/index/topic-02.png" alt="06"></a>
+              <div>
+                <h5>1から始める高校数学</h5>
+                <p>～テキストの選び方【実践編(理系)】</p>
+              </div>
+            </div>
+            <div class="topic-box"><a href="topic_1.html" target="_blank">
+              <img src="images/index/topic-02.png" alt="07"></a>
+              <div>
+                <h5>1から始める高校数学</h5>
+                <p>～テキストの選び方【基礎編】</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- アクセス -->
+        <section id="access">
+          <h2 class="index-h2">アクセス</h2>
+          <table id="access-table">
+              <th class="tableheader">所在地</th>
+              <td class="cell">〒240-0065 神奈川県横浜市保土ケ谷区和田1 丁目12−17 ホーユウパレス和田町 2階201号<br>相鉄本線「和田町駅」より徒歩3分</td>
+            </tr>
+              <th class="tableheader">設立</th>
+              <td class="cell">2015年3月19日</td>
+            </tr>
+          </table>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.5860738315873!2d139.58597287650414!3d35.465040672657736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185bde2e116eb1%3A0x1b3c671a287ad69e!2z44CSMjQwLTAwNjUg56We5aWI5bed55yM5qiq5rWc5biC5L-d5Zyf44Kx6LC35Yy65ZKM55Sw77yR5LiB55uu77yR77yS4oiS77yR77yXIOODm-ODvOODpuOCpuODkeODrOOCueWSjOeUsOeUug!5e0!3m2!1sja!2sjp!4v1754747342914!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <!-- お問い合わせフォーム -->
+        <section id="contact">
+          <h2 class="index-h2">お問い合わせ</h2>
+          <p>無料体験授業、学習相談などお気軽にご相談ください。</p>
+<h3>電話番号：<a href="tel:045-1234-5678">045-1234-5678</a></h3>
+
+  <h3>Webフォーム：</h3>
+  <form>
+  <div>
+  <div class="contact-heading">
+    <label class="contact-label">お名前<span class="contact-span">*必須</span></label>
+  </div>
+  <div>
+    <input type="text" name="name" placeholder="入力してください" class="contact-textbox">
+  </div>
+  </div>
+  <div>
+  <div class="contact-heading">
+    <label class="contact-label">フリガナ<span class="contact-span">*必須</span></label>
+  </div>
+  <div>
+    <input type="text" name="hurigana" placeholder="入力してください" class="contact-textbox">
+  </div>
+  </div>
+  <div>
+  <div class="contact-heading">
+    <label class="contact-label">メールアドレス<span class="contact-span">*必須</span></label>
+  </div>
+  <div>
+    <input type="text" name="email" placeholder="入力してください" class="contact-textbox">
+  </div>
+  </div>
+  <div>
+  <div class="contact-heading">
+    <label class="contact-label">電話番号</label>
+  </div>
+  <div>
+    <input type="text" name="tel" placeholder="入力してください" class="contact-textbox">
+  </div>
+  </div>
+  <div>
+  <div class="contact-heading">
+    <label class="contact-label">お問い合わせ内容<span class="contact-span">*必須</span></label>
+  </div>
+  <div>
+    <textarea class="contact-textarea" placeholder="入力してください" name="message"></textarea>
+  </div>
+  </div>
+  <div>
+  <div class="contact-heading">
+    <label class="contact-label">ご希望の連絡先<span class="contact-span">*必須</span></label>
+  </div>
+  <div>
+    <input class="radiobutton" type="radio" value="tel" name="contact" checked><label>お電話</label>
+    <input class="radiobutton" type="radio" value="mail" name="contact"><label>メール</label>
+    <input class="radiobutton" type="radio" value="both" name="contact"><label>どちらでも</label>
+  </div>
+  </div>
+<input type="image" src="images/button-submit.png" alt="送信する">
+</form>
+</section>
+      </article>
+    </main>
+
+    <footer>
+      <div id="footer-link">
+        <a href="course.html">コース</a>
+        <a href="about.html">DUOについて</a>
+        <a href="index.html#news">ニュース</a>
+        <a href="index.html#topic">トピック</a>
+        <a href="index.html#access">アクセス</a>
+        <a href="index.html#contact">お問い合わせ</a>
+      </div>
+        <p id="copyright">&copy;2025 DUO受験パーソナルトレーニング All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
